@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пропускной пункт</title>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById('password').value;
+      if (password === 'абсент') {
+        window.location.href = 'https://example.com/доступ';
+      } else {
+        alert('Неверный пароль');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Введите пароль для доступа:</h2>
+  <input type="password" id="password" placeholder="Пароль">
+  <button onclick="checkPassword()">Отправить</button>
+</body>
+</html>
